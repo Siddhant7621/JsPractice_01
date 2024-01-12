@@ -51,7 +51,6 @@ function validateGuess(guess){
 function checkGuess(guess){
     if(guess === randomNumber){
         displayMessage(`You guessed it right`);
-        userInput.setAttribute('disabled', '');
         endGame();
     }
     else if( guess < randomNumber){
